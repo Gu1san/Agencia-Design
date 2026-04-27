@@ -1,0 +1,106 @@
+body {
+  font-family: var(--font-primary);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h2,
+h3 {
+  margin: var(--space-sm) 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+a {
+  color: var(--text-primary);
+  transition: color 0.2s ease;
+}
+
+i {
+  color: var(--text-brand);
+}
+
+a:hover {
+  color: var(--text-brand);
+}
+
+input,
+textarea,
+select {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--input-border);
+  border-radius: var(--radius-sm);
+}
+
+input {
+  outline: none;
+}
+
+input:hover {
+  outline: 2px solid var(--input-border-hover);
+}
+
+input:focus {
+  outline: 2px solid var(--input-border-focus);
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+}
+
+img {
+  border-radius: var(--radius-sm);
+}
+
+button {
+  transition: background-color 0.2s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+section {
+  padding: var(--space-2xl) var(--space-xl);
+}
+
+::selection {
+  background-color: var(--brand-primary);
+  color: var(--color-gray-50);
+}
+
+html {
+  scroll-behavior: smooth;
+}

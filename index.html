@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vértice Studio</title>
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/tokens.css" rel="stylesheet" />
+    <link href="./css/base.css" rel="stylesheet" />
+    <link href="./css/layout.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/71d44480f4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img id="logo" alt="logo da empresa" src="./assets/logo.png" />
+      <nav>
+        <a href="#home">Início</a>
+        <a href="#projects">Projetos</a>
+        <a href="#about">Sobre nós</a>
+        <a href="#testimonials">Depoimentos</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="home">
+        <div class="home-texts-container">
+          <h1>Design que posiciona marcas no lugar certo</h1>
+          <p>
+            Na Vértice Design, transformamos ideias em experiências visuais
+            estratégicas. Unimos criatividade e tecnologia para construir marcas
+            fortes, claras e preparadas para crescer no digital.
+          </p>
+        </div>
+        <!-- Estava pensando em fazer essa imagem com um fade nas laterais pra mesclar com o fundo -->
+        <img alt="imagem de capa" src="./assets/bg.png" />
+      </section>
+      <section id="projects" class="projects">
+        <h2>Nossos projetos</h2>
+        <div class="projects-list">
+          <article class="project-card">
+            <img alt="capa do projeto" src="./assets/project.png" />
+            <div>
+              <h3>Aurora Finance</h3>
+              <p>Desenvolvimento web</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img alt="capa do projeto" src="./assets/project.png" />
+            <div>
+              <h3>Lume Coffee</h3>
+              <p>Branding</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img alt="capa do projeto" src="./assets/project.png" />
+            <div>
+              <h3>Nexa Tech</h3>
+              <p>Design</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img alt="capa do projeto" src="./assets/project.png" />
+            <div>
+              <h3>Vértika Arquitetura</h3>
+              <p>Desenvolvimento web</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img alt="capa do projeto" src="./assets/project.png" />
+            <div>
+              <h3>Pulse Wear</h3>
+              <p>Branding</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <img alt="capa do projeto" src="./assets/project.png" />
+            <div>
+              <h3>Clarity Saúde</h3>
+              <p>Design</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div>
+          <h2>Sobre a Vértice</h2>
+          <p>
+            A Vértice Design une estratégia e criatividade para desenvolver
+            soluções visuais que comunicam com clareza e geram resultados.
+            Atuamos de forma próxima aos nossos clientes, transformando ideias
+            em experiências digitais consistentes e relevantes.
+          </p>
+          <div class="values-container">
+            <h3>Nossos valores</h3>
+            <div class="values-parent">
+              <div class="value-card">
+                <i class="fa-solid fa-filter fa-lg"></i>
+                <div class="value-texts">
+                  <h4>Clareza acima de complexidade</h4>
+                  <p>Soluções simples, objetivas e fáceis de entender.</p>
+                </div>
+              </div>
+              <div class="value-card">
+                <i class="fa-solid fa-crosshairs fa-lg"></i>
+                <div class="value-texts">
+                  <h4>Design com propósito</h4>
+                  <p>Cada decisão visual tem um objetivo claro.</p>
+                </div>
+              </div>
+              <div class="value-card">
+                <i class="fa-solid fa-hand-holding fa-lg"></i>
+                <div class="value-texts">
+                  <h4>Colaboração constante</h4>
+                  <p>Trabalhamos juntos, do início ao fim do projeto.</p>
+                </div>
+              </div>
+              <div class="value-card">
+                <i class="fa-solid fa-chart-line fa-lg"></i>
+                <div class="value-texts">
+                  <h4>Foco em resultado</h4>
+                  <p>Design que impacta o negócio, não só a estética.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="partners">
+        <h2>Parcerias de sucesso</h2>
+        <div class="partners-row">
+          <img alt="logo de parceiro" src="partner.png" />
+          <img alt="logo de parceiro" src="partner.png" />
+          <img alt="logo de parceiro" src="partner.png" />
+          <img alt="logo de parceiro" src="partner.png" />
+          <img alt="logo de parceiro" src="partner.png" />
+          <img alt="logo de parceiro" src="partner.png" />
+        </div> -->
+      </section>
+      <section id="testimonials" class="testimonials">
+        <h2>O que dizem sobre nós</h2>
+        <!-- Aqui eu pensei em um scroll horizontal em loop, que mostra um item por vez mais as bordas do anterior e próximo -->
+        <div class="testimonials-scroll">
+          <blockquote class="testimonial-card">
+            <i class="fa-solid fa-quote-left fa-2xl"></i>
+            <p class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="testimonial-person-container">
+              <img alt="foto de perfil" src="./assets/persona1.jpg" />
+              <div class="testimonial-person-texts">
+                <p class="testimonial-name">Nome Pessoa</p>
+                <p class="testimonial-role">Cargo, Empresa</p>
+              </div>
+            </div>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <i class="fa-solid fa-quote-left fa-2xl"></i>
+            <p class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="testimonial-person-container">
+              <img alt="foto de perfil" src="./assets/persona2.jpg" />
+              <div class="testimonial-person-texts">
+                <p class="testimonial-name">Nome Pessoa</p>
+                <p class="testimonial-role">Cargo, Empresa</p>
+              </div>
+            </div>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <i class="fa-solid fa-quote-left fa-2xl"></i>
+            <p class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="testimonial-person-container">
+              <img alt="foto de perfil" src="./assets/persona3.jpg" />
+              <div class="testimonial-person-texts">
+                <p class="testimonial-name">Nome Pessoa</p>
+                <p class="testimonial-role">Cargo, Empresa</p>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <div>
+          <h2>
+            Tem algo em mente?<br />
+            Vamos conversar!
+          </h2>
+          <div class="contact-channels">
+            <p>Se preferir, nos envie uma mensagem!</p>
+            <a href="mailto:contato@vertice.com">contato@vertice.com</a>
+            <a href="">+55 (31)99999-9999</a>
+            <div class="address">
+              <p>Rua Tal, 000</p>
+              <p>Belo Horizonte - MG</p>
+            </div>
+          </div>
+        </div>
+        <form>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Nome completo"
+          />
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Seu melhor E-mail"
+          />
+          <input id="phone" name="phone" type="tel" placeholder="Celular" />
+          <button class="submit-btn">Enviar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

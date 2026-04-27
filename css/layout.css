@@ -1,0 +1,224 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  width: 60vw;
+  margin: var(--space-md) 0;
+  align-self: center;
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  height: 70px;
+  max-width: 800px;
+}
+
+header img {
+  height: 100%;
+  width: auto;
+}
+
+header > nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-md);
+  flex: 1;
+  max-width: 75%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.home {
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 0;
+}
+
+.home > div {
+  max-width: 60vw;
+}
+
+.home img {
+  width: 70%;
+  height: auto;
+  margin-left: -20%;
+  z-index: -1;
+  border-radius: 0;
+}
+
+.projects-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-card {
+  width: 90%;
+  align-self: center;
+  margin-bottom: 5vh;
+}
+
+.project-card img:hover {
+  outline: 1px solid var(--brand-primary-hover);
+  transition: outline 0.2s ease-in-out;
+}
+
+.project-card > div {
+  margin-top: var(--space-sm);
+}
+
+.about > div {
+  background-color: var(--bg-secondary);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+}
+
+.values-container {
+  padding-top: var(--space-sm);
+}
+
+.values-container i {
+  padding-top: 10px;
+}
+
+.values-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.value-card {
+  display: flex;
+  margin-bottom: var(--space-md);
+  width: 40%;
+  gap: var(--space-md);
+  align-items: flex-start;
+}
+
+.testimonials-scroll {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: var(--space-sm);
+}
+
+.testimonial-card {
+  background-color: var(--card-bg);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  max-width: 30vw;
+  min-width: 300px;
+}
+
+.testimonial-person-container {
+  width: 100%;
+  margin-top: var(--space-md);
+}
+
+.testimonial-person-container > img {
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 5vw;
+  max-height: 5vw;
+
+  border-radius: 100%;
+}
+
+.testimonial-text {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-medium);
+}
+
+.testimonial-name {
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-medium);
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact > div {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  justify-content: space-between;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--card-bg);
+  padding: var(--space-lg);
+  width: 45%;
+  border-radius: var(--radius-lg);
+  gap: var(--space-sm);
+}
+
+input {
+  padding: var(--space-sm);
+  width: 100%;
+}
+
+.submit-btn {
+  background-color: var(--button-primary-bg);
+  color: var(--button-primary-text);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm);
+  width: 100%;
+  margin-top: var(--space-md);
+}
+
+.submit-btn:hover {
+  background-color: var(--button-primary-bg-hover);
+}
+
+.submit-btn:focus {
+  background-color: var(--button-primary-bg-press);
+}
+
+.contact-channels {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+@media (max-width: 950px) {
+  header {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    justify-content: space-evenly;
+    padding: var(--space-md) var(--space-sm);
+  }
+
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .contact form {
+    width: 100%;
+  }
+}
