@@ -3,7 +3,7 @@ body {
   flex-direction: column;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,12 +17,12 @@ header {
   max-width: 800px;
 }
 
-header img {
+.header__logo {
   height: 100%;
   width: auto;
 }
 
-header > nav {
+.header__nav {
   display: flex;
   justify-content: flex-end;
   gap: var(--space-md);
@@ -41,11 +41,11 @@ section {
   padding-right: 0;
 }
 
-.home > div {
+.home__container {
   max-width: 60vw;
 }
 
-.home img {
+.home__cover {
   width: 70%;
   height: auto;
   margin-left: -20%;
@@ -53,48 +53,47 @@ section {
   border-radius: 0;
 }
 
-.projects-list {
+.projects__list {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.project-card {
+.projects__card {
   width: 90%;
-  align-self: center;
   margin-bottom: 5vh;
 }
 
-.project-card img:hover {
+.projects__image:hover {
   outline: 1px solid var(--brand-primary-hover);
   transition: outline 0.2s ease-in-out;
 }
 
-.project-card > div {
+.projects__content {
   margin-top: var(--space-sm);
 }
 
-.about > div {
+.about__container {
   background-color: var(--bg-secondary);
   padding: var(--space-xl);
   border-radius: var(--radius-lg);
 }
 
-.values-container {
+.values {
   padding-top: var(--space-sm);
 }
 
-.values-container i {
+.values__icon {
   padding-top: 10px;
 }
 
-.values-parent {
+.values__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.value-card {
+.values__item {
   display: flex;
   margin-bottom: var(--space-md);
   width: 40%;
@@ -102,7 +101,7 @@ section {
   align-items: flex-start;
 }
 
-.testimonials-scroll {
+.testimonials__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -110,7 +109,7 @@ section {
   margin-top: var(--space-sm);
 }
 
-.testimonial-card {
+.testimonials__card {
   background-color: var(--card-bg);
   padding: var(--space-xl);
   border-radius: var(--radius-lg);
@@ -118,12 +117,12 @@ section {
   min-width: 300px;
 }
 
-.testimonial-person-container {
+.testimonials__person {
   width: 100%;
   margin-top: var(--space-md);
 }
 
-.testimonial-person-container > img {
+.testimonials__avatar {
   min-width: 50px;
   min-height: 50px;
   max-width: 5vw;
@@ -132,12 +131,12 @@ section {
   border-radius: 100%;
 }
 
-.testimonial-text {
+.testimonials__text {
   font-size: 1.5rem;
   font-weight: var(--font-weight-medium);
 }
 
-.testimonial-name {
+.testimonials__name {
   font-size: 1.2rem;
   font-weight: var(--font-weight-medium);
 }
@@ -148,14 +147,14 @@ section {
   justify-content: space-between;
 }
 
-.contact > div {
+.contact__content {
   display: flex;
   flex-direction: column;
   flex: auto;
   justify-content: space-between;
 }
 
-.contact form {
+.contact__form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -166,12 +165,12 @@ section {
   gap: var(--space-sm);
 }
 
-input {
+.contact__input {
   padding: var(--space-sm);
   width: 100%;
 }
 
-.submit-btn {
+.contact__button {
   background-color: var(--button-primary-bg);
   color: var(--button-primary-text);
   border-radius: var(--radius-sm);
@@ -180,15 +179,15 @@ input {
   margin-top: var(--space-md);
 }
 
-.submit-btn:hover {
+.contact__button:hover {
   background-color: var(--button-primary-bg-hover);
 }
 
-.submit-btn:focus {
+.contact__button:focus {
   background-color: var(--button-primary-bg-press);
 }
 
-.contact-channels {
+.contact__channels {
   display: flex;
   width: 45%;
   flex-direction: column;
@@ -208,7 +207,7 @@ input {
     padding: var(--space-md) var(--space-sm);
   }
 
-  .projects-list {
+  .projects__list {
     display: flex;
     flex-direction: column;
   }
@@ -218,7 +217,7 @@ input {
     gap: var(--space-lg);
   }
 
-  .contact form {
+  .contact__form {
     width: 100%;
   }
 }

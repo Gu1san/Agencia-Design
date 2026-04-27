@@ -14,9 +14,9 @@
     ></script>
   </head>
   <body>
-    <header>
-      <img id="logo" alt="logo da empresa" src="./assets/logo.png" />
-      <nav>
+    <header class="header">
+      <img class="header__logo" id="logo" alt="logo da empresa" src="./assets/logo.png" />
+      <nav class="header__nav">
         <a href="#home">Início</a>
         <a href="#projects">Projetos</a>
         <a href="#about">Sobre nós</a>
@@ -26,66 +26,65 @@
     </header>
     <main>
       <section id="home" class="home">
-        <div class="home-texts-container">
-          <h1>Design que posiciona marcas no lugar certo</h1>
-          <p>
+        <div class="home__container">
+          <h1 class="home__title">Design que posiciona marcas no lugar certo</h1>
+          <p class="home__description">
             Na Vértice Design, transformamos ideias em experiências visuais
             estratégicas. Unimos criatividade e tecnologia para construir marcas
             fortes, claras e preparadas para crescer no digital.
           </p>
         </div>
-        <!-- Estava pensando em fazer essa imagem com um fade nas laterais pra mesclar com o fundo -->
-        <img alt="imagem de capa" src="./assets/bg.png" />
+        <img class="home__cover" alt="imagem de capa" src="./assets/bg.png" />
       </section>
       <section id="projects" class="projects">
         <h2>Nossos projetos</h2>
-        <div class="projects-list">
-          <article class="project-card">
-            <img alt="capa do projeto" src="./assets/project.png" />
-            <div>
-              <h3>Aurora Finance</h3>
-              <p>Desenvolvimento web</p>
+        <div class="projects__list">
+          <article class="projects__card">
+            <img class="projects__image" alt="capa do projeto" src="./assets/project.png" />
+            <div class="projects__content">
+              <h3 class="projects__title">Aurora Finance</h3>
+              <p class="projects__category">Desenvolvimento web</p>
             </div>
           </article>
-          <article class="project-card">
-            <img alt="capa do projeto" src="./assets/project.png" />
-            <div>
-              <h3>Lume Coffee</h3>
-              <p>Branding</p>
+          <article class="projects__card">
+            <img class="projects__image" alt="capa do projeto" src="./assets/project.png" />
+            <div class="projects__content">
+              <h3 class="projects__title">Lume Coffee</h3>
+              <p class="projects__category">Branding</p>
             </div>
           </article>
-          <article class="project-card">
-            <img alt="capa do projeto" src="./assets/project.png" />
-            <div>
-              <h3>Nexa Tech</h3>
-              <p>Design</p>
+          <article class="projects__card">
+            <img class="projects__image" alt="capa do projeto" src="./assets/project.png" />
+            <div class="projects__content">
+              <h3 class="projects__title">Nexa Tech</h3>
+              <p class="projects__category">Design</p>
             </div>
           </article>
-          <article class="project-card">
-            <img alt="capa do projeto" src="./assets/project.png" />
-            <div>
-              <h3>Vértika Arquitetura</h3>
-              <p>Desenvolvimento web</p>
+          <article class="projects__card">
+            <img class="projects__image" alt="capa do projeto" src="./assets/project.png" />
+            <div class="projects__content">
+              <h3 class="projects__title">Vértika Arquitetura</h3>
+              <p class="projects__category">Desenvolvimento web</p>
             </div>
           </article>
-          <article class="project-card">
-            <img alt="capa do projeto" src="./assets/project.png" />
-            <div>
-              <h3>Pulse Wear</h3>
-              <p>Branding</p>
+          <article class="projects__card">
+            <img class="projects__image" alt="capa do projeto" src="./assets/project.png" />
+            <div class="projects__content">
+              <h3 class="projects__title">Pulse Wear</h3>
+              <p class="projects__category">Branding</p>
             </div>
           </article>
-          <article class="project-card">
-            <img alt="capa do projeto" src="./assets/project.png" />
-            <div>
-              <h3>Clarity Saúde</h3>
-              <p>Design</p>
+          <article class="projects__card">
+            <img class="projects__image" alt="capa do projeto" src="./assets/project.png" />
+            <div class="projects__content">
+              <h3 class="projects__title">Clarity Saúde</h3>
+              <p class="projects__category">Design</p>
             </div>
           </article>
         </div>
       </section>
       <section id="about" class="about">
-        <div>
+        <div class="about__container">
           <h2>Sobre a Vértice</h2>
           <p>
             A Vértice Design une estratégia e criatividade para desenvolver
@@ -93,35 +92,35 @@
             Atuamos de forma próxima aos nossos clientes, transformando ideias
             em experiências digitais consistentes e relevantes.
           </p>
-          <div class="values-container">
-            <h3>Nossos valores</h3>
-            <div class="values-parent">
-              <div class="value-card">
-                <i class="fa-solid fa-filter fa-lg"></i>
-                <div class="value-texts">
-                  <h4>Clareza acima de complexidade</h4>
-                  <p>Soluções simples, objetivas e fáceis de entender.</p>
+          <div class="values">
+            <h3 class="values__title">Nossos valores</h3>
+            <div class="values__list">
+              <div class="values__item">
+                <i class="values__icon fa-solid fa-filter fa-lg"></i>
+                <div class="values__content">
+                  <h4 class="values__name">Clareza acima de complexidade</h4>
+                  <p class="values__description">Soluções simples, objetivas e fáceis de entender.</p>
                 </div>
               </div>
-              <div class="value-card">
-                <i class="fa-solid fa-crosshairs fa-lg"></i>
-                <div class="value-texts">
-                  <h4>Design com propósito</h4>
-                  <p>Cada decisão visual tem um objetivo claro.</p>
+              <div class="values__item">
+                <i class="values__icon fa-solid fa-crosshairs fa-lg"></i>
+                <div class="values__content">
+                  <h4 class="values__name">Design com propósito</h4>
+                  <p class="values__description">Cada decisão visual tem um objetivo claro.</p>
                 </div>
               </div>
-              <div class="value-card">
-                <i class="fa-solid fa-hand-holding fa-lg"></i>
-                <div class="value-texts">
-                  <h4>Colaboração constante</h4>
-                  <p>Trabalhamos juntos, do início ao fim do projeto.</p>
+              <div class="values__item">
+                <i class="values__icon fa-solid fa-hand-holding fa-lg"></i>
+                <div class="values__content">
+                  <h4 class="values__name">Colaboração constante</h4>
+                  <p class="values__description">Trabalhamos juntos, do início ao fim do projeto.</p>
                 </div>
               </div>
-              <div class="value-card">
-                <i class="fa-solid fa-chart-line fa-lg"></i>
-                <div class="value-texts">
-                  <h4>Foco em resultado</h4>
-                  <p>Design que impacta o negócio, não só a estética.</p>
+              <div class="values__item">
+                <i class="values__icon fa-solid fa-chart-line fa-lg"></i>
+                <div class="values__content">
+                  <h4 class="values__name">Foco em resultado</h4>
+                  <p class="values__description">Design que impacta o negócio, não só a estética.</p>
                 </div>
               </div>
             </div>
@@ -140,60 +139,60 @@
         </div> -->
       </section>
       <section id="testimonials" class="testimonials">
-        <h2>O que dizem sobre nós</h2>
+        <h2 class="testimonials__title">O que dizem sobre nós</h2>
         <!-- Aqui eu pensei em um scroll horizontal em loop, que mostra um item por vez mais as bordas do anterior e próximo -->
-        <div class="testimonials-scroll">
-          <blockquote class="testimonial-card">
-            <i class="fa-solid fa-quote-left fa-2xl"></i>
-            <p class="testimonial-text">
+        <div class="testimonials__list">
+          <blockquote class="testimonials__card">
+            <i class="testimonials__icon fa-solid fa-quote-left fa-2xl"></i>
+            <p class="testimonials__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <div class="testimonial-person-container">
-              <img alt="foto de perfil" src="./assets/persona1.jpg" />
-              <div class="testimonial-person-texts">
-                <p class="testimonial-name">Nome Pessoa</p>
-                <p class="testimonial-role">Cargo, Empresa</p>
+            <div class="testimonials__person">
+              <img class="testimonials__avatar" alt="foto de perfil" src="./assets/persona1.jpg" />
+              <div class="testimonials__info">
+                <p class="testimonials__name">Nome Pessoa</p>
+                <p class="testimonials__role">Cargo, Empresa</p>
               </div>
             </div>
           </blockquote>
-          <blockquote class="testimonial-card">
-            <i class="fa-solid fa-quote-left fa-2xl"></i>
-            <p class="testimonial-text">
+          <blockquote class="testimonials__card">
+            <i class="testimonials__icon fa-solid fa-quote-left fa-2xl"></i>
+            <p class="testimonials__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <div class="testimonial-person-container">
-              <img alt="foto de perfil" src="./assets/persona2.jpg" />
-              <div class="testimonial-person-texts">
-                <p class="testimonial-name">Nome Pessoa</p>
-                <p class="testimonial-role">Cargo, Empresa</p>
+            <div class="testimonials__person">
+              <img class="testimonials__avatar" alt="foto de perfil" src="./assets/persona2.jpg" />
+              <div class="testimonials__info">
+                <p class="testimonials__name">Nome Pessoa</p>
+                <p class="testimonials__role">Cargo, Empresa</p>
               </div>
             </div>
           </blockquote>
-          <blockquote class="testimonial-card">
-            <i class="fa-solid fa-quote-left fa-2xl"></i>
-            <p class="testimonial-text">
+          <blockquote class="testimonials__card">
+            <i class="testimonials__icon fa-solid fa-quote-left fa-2xl"></i>
+            <p class="testimonials__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <div class="testimonial-person-container">
-              <img alt="foto de perfil" src="./assets/persona3.jpg" />
-              <div class="testimonial-person-texts">
-                <p class="testimonial-name">Nome Pessoa</p>
-                <p class="testimonial-role">Cargo, Empresa</p>
+            <div class="testimonials__person">
+              <img class="testimonials__avatar" alt="foto de perfil" src="./assets/persona3.jpg" />
+              <div class="testimonials__info">
+                <p class="testimonials__name">Nome Pessoa</p>
+                <p class="testimonials__role">Cargo, Empresa</p>
               </div>
             </div>
           </blockquote>
         </div>
       </section>
       <section id="contact" class="contact">
-        <div>
-          <h2>
+        <div class="contact__content">
+          <h2 class="contact__title">
             Tem algo em mente?<br />
             Vamos conversar!
           </h2>
-          <div class="contact-channels">
+          <div class="contact__channels">
             <p>Se preferir, nos envie uma mensagem!</p>
             <a href="mailto:contato@vertice.com">contato@vertice.com</a>
             <a href="">+55 (31)99999-9999</a>
@@ -203,21 +202,23 @@
             </div>
           </div>
         </div>
-        <form>
+        <form class="contact__form">
           <input
+            class="contact__input"
             id="name"
             name="name"
             type="text"
             placeholder="Nome completo"
           />
           <input
+            class="contact__input"
             id="email"
             name="email"
             type="email"
             placeholder="Seu melhor E-mail"
           />
-          <input id="phone" name="phone" type="tel" placeholder="Celular" />
-          <button class="submit-btn">Enviar</button>
+          <input class="contact__input" id="phone" name="phone" type="tel" placeholder="Celular" />
+          <button class="contact__button">Enviar</button>
         </form>
       </section>
     </main>
