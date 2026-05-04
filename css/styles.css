@@ -1,0 +1,469 @@
+@charset "UTF-8";
+/* ========================================
+   🎨 COLORS - RAW (FOUNDATION)
+======================================== */
+/* ========================================
+   🧠 SEMANTIC TOKENS
+======================================== */
+/* BACKGROUND */
+/* BRAND */
+/* TEXT */
+/* BORDERS */
+/* ========================================
+   🧾 INPUT
+======================================== */
+/* ========================================
+   🔘 BUTTON
+======================================== */
+/* ========================================
+   🧩 CARD
+======================================== */
+/* ========================================
+   🔗 NAVIGATION
+======================================== */
+/* ========================================
+   🔤 TYPOGRAPHY
+======================================== */
+/* ========================================
+   📏 SPACING & RADIUS
+======================================== */
+/* ========================================
+   🌑 EFFECTS
+======================================== */
+/* ========================================
+   🔄 RESET
+======================================== */
+/* 1. Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove margin */
+* {
+  margin: 0;
+}
+
+/* 3. Base body */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Form elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 6. Text wrapping */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 7. Root stacking context */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Links reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Button reset */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* ========================================
+   🧠 BASE
+======================================== */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  line-height: 1.5;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h2,
+h3 {
+  margin: 8px 0;
+}
+
+/* Font sizes */
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  color: #cbd5f5;
+}
+
+/* Links */
+a {
+  color: #f8fafc;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #7c3aed;
+}
+
+/* Icons */
+i {
+  color: #7c3aed;
+}
+
+/* Forms */
+input,
+textarea,
+select {
+  background-color: #020617;
+  color: #f8fafc;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+}
+
+/* Input states */
+input {
+  outline: none;
+}
+input:hover {
+  outline: 2px solid #334155;
+}
+input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.3);
+}
+
+/* Buttons */
+button {
+  font-family: inherit;
+  color: inherit;
+  transition: background-color 0.2s ease;
+}
+
+/* Images */
+img {
+  border-radius: 8px;
+}
+
+/* Layout helpers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+section {
+  padding: 80px 40px;
+}
+
+/* Selection */
+::selection {
+  background-color: #7c3aed;
+  color: #f8fafc;
+}
+
+/* Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========================================
+   FLEX UTIL
+======================================== */
+/* ========================================
+   CARD BASE
+======================================== */
+/* ========================================
+   BUTTON PRIMARY
+======================================== */
+/* ========================================
+   RESPONSIVE
+======================================== */
+/* BODY */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #020617;
+  width: 60vw;
+  margin: 16px 0;
+  align-self: center;
+  border-radius: 16px;
+  padding: 16px;
+  height: 70px;
+  max-width: 800px;
+}
+.header__logo {
+  height: 100%;
+  width: auto;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  max-width: 75%;
+}
+
+/* SECTIONS */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+/* HOME */
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-right: 0;
+}
+.home__container {
+  max-width: 60vw;
+}
+.home__cover {
+  width: 70%;
+  margin-left: -20%;
+  z-index: -1;
+  border-radius: 0;
+}
+
+/* PROJECTS */
+.projects__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.projects__card {
+  width: 90%;
+  margin-bottom: 5vh;
+}
+.projects__image:hover {
+  outline: 1px solid #6d28d9;
+  transition: outline 0.2s ease-in-out;
+}
+.projects__content {
+  margin-top: 8px;
+}
+
+/* ABOUT */
+.about__container {
+  background-color: #1e293b;
+  padding: 40px;
+  border-radius: 16px;
+  background-color: #020617;
+}
+
+/* VALUES */
+.values {
+  padding-top: 8px;
+}
+.values__icon {
+  padding-top: 10px;
+}
+.values__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.values__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+  width: 40%;
+}
+
+/* TESTIMONIALS */
+.testimonials__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.testimonials__card {
+  background-color: #1e293b;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 30vw;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.testimonials__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 24px;
+}
+.testimonials__person {
+  width: 100%;
+  margin-top: 16px;
+}
+.testimonials__avatar {
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 5vw;
+  max-height: 5vw;
+  border-radius: 100%;
+}
+.testimonials__text {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.testimonials__name {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* CONTACT */
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  flex: auto;
+}
+.contact__form {
+  background-color: #1e293b;
+  padding: 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  width: 45%;
+}
+.contact__input {
+  padding: 8px;
+  width: 100%;
+}
+.contact__button {
+  background-color: #7c3aed;
+  color: #f8fafc;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+.contact__button:hover {
+  background-color: #6d28d9;
+}
+.contact__button:focus {
+  background-color: #5b21b6;
+}
+.contact__button {
+  margin-top: 16px;
+}
+.contact__channels {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 45%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 950px) {
+  .header {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-evenly;
+    padding: 16px 8px;
+  }
+  .projects__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .contact__form {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

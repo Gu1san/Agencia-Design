@@ -1,0 +1,212 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+/* BODY */
+body {
+  @include m.flex(column);
+}
+
+/* HEADER */
+.header {
+  @include m.flex(row, space-between, center);
+
+  background-color: v.$bg-secondary;
+  width: 60vw;
+  margin: v.$space-md 0;
+  align-self: center;
+  border-radius: v.$radius-lg;
+  padding: v.$space-md;
+  height: 70px;
+  max-width: 800px;
+
+  &__logo {
+    height: 100%;
+    width: auto;
+  }
+
+  &__nav {
+    @include m.flex(row, flex-end, center, v.$space-md);
+    flex: 1;
+    max-width: 75%;
+  }
+}
+
+/* SECTIONS */
+section {
+  @include m.flex(column);
+}
+
+/* HOME */
+.home {
+  @include m.flex(row, space-between);
+
+  padding-right: 0;
+
+  &__container {
+    max-width: 60vw;
+  }
+
+  &__cover {
+    width: 70%;
+    margin-left: -20%;
+    z-index: -1;
+    border-radius: 0;
+  }
+}
+
+/* PROJECTS */
+.projects {
+  &__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__card {
+    width: 90%;
+    margin-bottom: calc(10vh / 2); // uso de operador ✔️
+  }
+
+  &__image {
+    &:hover {
+      outline: 1px solid v.$brand-primary-hover;
+      transition: outline 0.2s ease-in-out;
+    }
+  }
+
+  &__content {
+    margin-top: v.$space-sm;
+  }
+}
+
+/* ABOUT */
+.about {
+  &__container {
+    @include m.card(v.$space-xl);
+    background-color: v.$bg-secondary;
+  }
+}
+
+/* VALUES */
+.values {
+  padding-top: v.$space-sm;
+
+  &__icon {
+    padding-top: 10px;
+  }
+
+  &__list {
+    @include m.flex(row, space-between, stretch);
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    @include m.flex(row, flex-start, flex-start, v.$space-md);
+    margin-bottom: v.$space-md;
+    width: 40%;
+  }
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  &__list {
+    @include m.flex(row, center, stretch, v.$space-md);
+    flex-wrap: wrap;
+    margin-top: v.$space-sm;
+  }
+
+  &__card {
+    @include m.card(v.$space-xl);
+    max-width: 30vw;
+    min-width: 300px;
+
+    @include m.flex(column, space-between);
+  }
+
+  &__top {
+    @include m.flex(column, flex-start, stretch, v.$space-lg);
+  }
+
+  &__person {
+    width: 100%;
+    margin-top: v.$space-md;
+  }
+
+  &__avatar {
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 5vw;
+    max-height: 5vw;
+    border-radius: 100%;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    font-weight: v.$font-weight-medium;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+    font-weight: v.$font-weight-medium;
+  }
+}
+
+/* CONTACT */
+.contact {
+  @include m.flex(row, space-between);
+
+  &__content {
+    @include m.flex(column, space-between);
+    flex: auto;
+  }
+
+  &__form {
+    @include m.card(v.$space-lg);
+    @include m.flex(column, flex-start, flex-start, v.$space-sm);
+
+    width: 45%;
+  }
+
+  &__input {
+    padding: v.$space-sm;
+    width: 100%;
+  }
+
+  &__button {
+    @include m.button-primary;
+    margin-top: v.$space-md;
+  }
+
+  &__channels {
+    @include m.flex(column, flex-end, flex-start);
+    width: 45%;
+  }
+}
+
+/* RESPONSIVE */
+@include m.respond(md) {
+  .header {
+    width: 90%;
+  }
+}
+
+@include m.respond(sm) {
+  .header {
+    justify-content: space-evenly;
+    padding: v.$space-md v.$space-sm;
+  }
+
+  .projects__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: v.$space-lg;
+
+    &__form {
+      width: 100%;
+    }
+  }
+}
