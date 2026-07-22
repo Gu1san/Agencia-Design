@@ -1,6 +1,4 @@
-/* ========================================
-   🎨 COLORS - RAW (FOUNDATION)
-======================================== */
+/* COLORS */
 $gray-950: #020617;
 $gray-900: #0f172a;
 $gray-800: #1e293b;
@@ -19,10 +17,6 @@ $purple-900: #4c1d95;
 $green-500: #22c55e;
 $red-500: #ef4444;
 $yellow-500: #f59e0b;
-
-/* ========================================
-   🧠 SEMANTIC TOKENS
-======================================== */
 
 /* BACKGROUND */
 $bg-primary: $gray-900;
@@ -49,9 +43,7 @@ $border-subtle: $gray-800;
 $border-default: $gray-700;
 $border-strong: $gray-600;
 
-/* ========================================
-   🧾 INPUT
-======================================== */
+/* INPUT */
 $input-text: $text-primary;
 $input-placeholder: $text-disabled;
 
@@ -62,9 +54,7 @@ $input-border-focus: $purple-600;
 
 $input-focus-ring: rgba(124, 58, 237, 0.3);
 
-/* ========================================
-   🔘 BUTTON
-======================================== */
+/* BUTTON */
 $button-primary-bg: $brand-primary;
 $button-primary-hover: $brand-primary-hover;
 $button-primary-press: $brand-primary-press;
@@ -77,24 +67,18 @@ $button-secondary-hover: $bg-elevated;
 $button-secondary-text: $text-primary;
 $button-secondary-border: $border-default;
 
-/* ========================================
-   🧩 CARD
-======================================== */
+/* CARD */
 $card-bg: $bg-elevated;
 $card-border: $border-subtle;
 $card-text: $text-primary;
 $card-text-secondary: $text-tertiary;
 
-/* ========================================
-   🔗 NAVIGATION
-======================================== */
+/* NAVIGATION */
 $nav-link: $text-primary;
 $nav-link-hover: $text-brand;
 $nav-link-active: $text-brand-active;
 
-/* ========================================
-   🔤 TYPOGRAPHY
-======================================== */
+/* TYPOGRAPHY */
 $font-primary: "Inter", sans-serif;
 $font-secondary: "Poppins", sans-serif;
 
@@ -103,9 +87,7 @@ $font-weight-medium: 500;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
 
-/* ========================================
-   📏 SPACING & RADIUS
-======================================== */
+/* SPACING & RADIUS */
 $radius-sm: 8px;
 $radius-md: 12px;
 $radius-lg: 16px;
@@ -117,9 +99,7 @@ $space-lg: 24px;
 $space-xl: 40px;
 $space-2xl: 80px;
 
-/* ========================================
-   🌑 EFFECTS
-======================================== */
+/* EFFECTS */
 $shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.1);
 $shadow-medium: 0 15px 40px rgba(0, 0, 0, 0.15);
 

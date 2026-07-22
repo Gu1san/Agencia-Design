@@ -1,28 +1,21 @@
 @use "variables" as v;
 
-/* ========================================
-   🔄 RESET
-======================================== */
-
-/* 1. Box sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* 2. Remove margin */
 * {
   margin: 0;
+  font-display: swap;
 }
 
-/* 3. Base body */
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
-/* 4. Media defaults */
 img,
 picture,
 video,
@@ -32,7 +25,6 @@ svg {
   max-width: 100%;
 }
 
-/* 5. Form elements */
 input,
 button,
 textarea,
@@ -40,7 +32,6 @@ select {
   font: inherit;
 }
 
-/* 6. Text wrapping */
 p,
 h1,
 h2,
@@ -51,28 +42,21 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* 7. Root stacking context */
 #root,
 #__next {
   isolation: isolate;
 }
 
-/* Links reset */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Button reset */
 button {
   border: none;
   background: none;
   cursor: pointer;
 }
-
-/* ========================================
-   🧠 BASE
-======================================== */
 
 body {
   font-family: v.$font-primary;
@@ -81,7 +65,6 @@ body {
   line-height: 1.5;
 }
 
-/* Typography */
 h1,
 h2,
 h3,
@@ -96,7 +79,6 @@ h3 {
   margin: v.$space-sm 0;
 }
 
-/* Font sizes */
 h1 {
   font-size: 2.25rem;
 }
@@ -117,7 +99,6 @@ p {
   color: v.$text-secondary;
 }
 
-/* Links */
 a {
   color: v.$text-primary;
   transition: color 0.2s ease;
@@ -127,12 +108,10 @@ a {
   }
 }
 
-/* Icons */
 i {
   color: v.$text-brand;
 }
 
-/* Forms */
 input,
 textarea,
 select {
@@ -142,7 +121,6 @@ select {
   border-radius: v.$radius-sm;
 }
 
-/* Input states */
 input {
   outline: none;
 
@@ -156,19 +134,16 @@ input {
   }
 }
 
-/* Buttons */
 button {
   font-family: inherit;
   color: inherit;
   transition: background-color 0.2s ease;
 }
 
-/* Images */
 img {
   border-radius: v.$radius-sm;
 }
 
-/* Layout helpers */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -179,13 +154,11 @@ section {
   padding: v.$space-2xl v.$space-xl;
 }
 
-/* Selection */
 ::selection {
   background-color: v.$brand-primary;
   color: v.$gray-50;
 }
 
-/* Scroll */
 html {
   scroll-behavior: smooth;
 }

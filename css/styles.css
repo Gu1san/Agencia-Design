@@ -1,57 +1,31 @@
-@charset "UTF-8";
-/* ========================================
-   🎨 COLORS - RAW (FOUNDATION)
-======================================== */
-/* ========================================
-   🧠 SEMANTIC TOKENS
-======================================== */
+/* COLORS */
 /* BACKGROUND */
 /* BRAND */
 /* TEXT */
 /* BORDERS */
-/* ========================================
-   🧾 INPUT
-======================================== */
-/* ========================================
-   🔘 BUTTON
-======================================== */
-/* ========================================
-   🧩 CARD
-======================================== */
-/* ========================================
-   🔗 NAVIGATION
-======================================== */
-/* ========================================
-   🔤 TYPOGRAPHY
-======================================== */
-/* ========================================
-   📏 SPACING & RADIUS
-======================================== */
-/* ========================================
-   🌑 EFFECTS
-======================================== */
-/* ========================================
-   🔄 RESET
-======================================== */
-/* 1. Box sizing */
+/* INPUT */
+/* BUTTON */
+/* CARD */
+/* NAVIGATION */
+/* TYPOGRAPHY */
+/* SPACING & RADIUS */
+/* EFFECTS */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* 2. Remove margin */
 * {
   margin: 0;
+  font-display: swap;
 }
 
-/* 3. Base body */
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
-/* 4. Media defaults */
 img,
 picture,
 video,
@@ -61,7 +35,6 @@ svg {
   max-width: 100%;
 }
 
-/* 5. Form elements */
 input,
 button,
 textarea,
@@ -69,7 +42,6 @@ select {
   font: inherit;
 }
 
-/* 6. Text wrapping */
 p,
 h1,
 h2,
@@ -80,28 +52,22 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* 7. Root stacking context */
 #root,
 #__next {
   isolation: isolate;
 }
 
-/* Links reset */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Button reset */
 button {
   border: none;
   background: none;
   cursor: pointer;
 }
 
-/* ========================================
-   🧠 BASE
-======================================== */
 body {
   font-family: "Inter", sans-serif;
   background-color: #0f172a;
@@ -109,7 +75,6 @@ body {
   line-height: 1.5;
 }
 
-/* Typography */
 h1,
 h2,
 h3,
@@ -124,7 +89,6 @@ h3 {
   margin: 8px 0;
 }
 
-/* Font sizes */
 h1 {
   font-size: 2.25rem;
 }
@@ -145,7 +109,6 @@ p {
   color: #cbd5f5;
 }
 
-/* Links */
 a {
   color: #f8fafc;
   transition: color 0.2s ease;
@@ -154,12 +117,10 @@ a:hover {
   color: #7c3aed;
 }
 
-/* Icons */
 i {
   color: #7c3aed;
 }
 
-/* Forms */
 input,
 textarea,
 select {
@@ -169,7 +130,6 @@ select {
   border-radius: 8px;
 }
 
-/* Input states */
 input {
   outline: none;
 }
@@ -181,19 +141,16 @@ input:focus {
   box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.3);
 }
 
-/* Buttons */
 button {
   font-family: inherit;
   color: inherit;
   transition: background-color 0.2s ease;
 }
 
-/* Images */
 img {
   border-radius: 8px;
 }
 
-/* Layout helpers */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -204,30 +161,15 @@ section {
   padding: 80px 40px;
 }
 
-/* Selection */
 ::selection {
   background-color: #7c3aed;
   color: #f8fafc;
 }
 
-/* Scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* ========================================
-   FLEX UTIL
-======================================== */
-/* ========================================
-   CARD BASE
-======================================== */
-/* ========================================
-   BUTTON PRIMARY
-======================================== */
-/* ========================================
-   RESPONSIVE
-======================================== */
-/* BODY */
 body {
   display: flex;
   flex-direction: column;
@@ -235,7 +177,6 @@ body {
   align-items: stretch;
 }
 
-/* HEADER */
 .header {
   display: flex;
   flex-direction: row;
@@ -264,7 +205,6 @@ body {
   max-width: 75%;
 }
 
-/* SECTIONS */
 section {
   display: flex;
   flex-direction: column;
@@ -272,7 +212,6 @@ section {
   align-items: stretch;
 }
 
-/* HOME */
 .home {
   display: flex;
   flex-direction: row;
@@ -290,7 +229,6 @@ section {
   border-radius: 0;
 }
 
-/* PROJECTS */
 .projects__list {
   width: 100%;
   display: grid;
@@ -308,7 +246,6 @@ section {
   margin-top: 8px;
 }
 
-/* ABOUT */
 .about__container {
   background-color: #1e293b;
   padding: 40px;
@@ -316,7 +253,6 @@ section {
   background-color: #020617;
 }
 
-/* VALUES */
 .values {
   padding-top: 8px;
 }
@@ -340,7 +276,6 @@ section {
   width: 40%;
 }
 
-/* TESTIMONIALS */
 .testimonials__list {
   display: flex;
   flex-direction: row;
@@ -388,7 +323,6 @@ section {
   font-weight: 500;
 }
 
-/* CONTACT */
 .contact {
   display: flex;
   flex-direction: row;
@@ -442,7 +376,6 @@ section {
   width: 45%;
 }
 
-/* RESPONSIVE */
 @media (max-width: 950px) {
   .header {
     width: 90%;

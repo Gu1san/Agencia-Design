@@ -1,12 +1,10 @@
 @use "variables" as v;
 @use "mixins" as m;
 
-/* BODY */
 body {
   @include m.flex(column);
 }
 
-/* HEADER */
 .header {
   @include m.flex(row, space-between, center);
 
@@ -31,12 +29,10 @@ body {
   }
 }
 
-/* SECTIONS */
 section {
   @include m.flex(column);
 }
 
-/* HOME */
 .home {
   @include m.flex(row, space-between);
 
@@ -54,7 +50,6 @@ section {
   }
 }
 
-/* PROJECTS */
 .projects {
   &__list {
     width: 100%;
@@ -64,7 +59,7 @@ section {
 
   &__card {
     width: 90%;
-    margin-bottom: calc(10vh / 2); // uso de operador ✔️
+    margin-bottom: calc(10vh / 2);
   }
 
   &__image {
@@ -79,7 +74,6 @@ section {
   }
 }
 
-/* ABOUT */
 .about {
   &__container {
     @include m.card(v.$space-xl);
@@ -87,7 +81,6 @@ section {
   }
 }
 
-/* VALUES */
 .values {
   padding-top: v.$space-sm;
 
@@ -107,7 +100,6 @@ section {
   }
 }
 
-/* TESTIMONIALS */
 .testimonials {
   &__list {
     @include m.flex(row, center, stretch, v.$space-md);
@@ -151,7 +143,6 @@ section {
   }
 }
 
-/* CONTACT */
 .contact {
   @include m.flex(row, space-between);
 
@@ -183,7 +174,6 @@ section {
   }
 }
 
-/* RESPONSIVE */
 @include m.respond(md) {
   .header {
     width: 90%;
