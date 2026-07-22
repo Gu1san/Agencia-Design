@@ -1,0 +1,49 @@
+@use "variables" as v;
+
+@mixin flex($direction: row, $justify: flex-start, $align: stretch, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+
+  @if $gap != 0 {
+    gap: $gap;
+  }
+}
+
+@mixin card($padding: v.$space-lg) {
+  background-color: v.$card-bg;
+  padding: $padding;
+  border-radius: v.$radius-lg;
+}
+
+@mixin button-primary {
+  background-color: v.$button-primary-bg;
+  color: v.$button-primary-text;
+  border-radius: v.$radius-sm;
+  padding: v.$space-sm;
+  width: 100%;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: v.$button-primary-hover;
+  }
+
+  &:focus {
+    background-color: v.$button-primary-press;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == md {
+    @media (max-width: 950px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == sm {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+/* COLORS */
+$gray-950: #020617;
+$gray-900: #0f172a;
+$gray-800: #1e293b;
+$gray-700: #334155;
+$gray-600: #475569;
+$gray-500: #64748b;
+$gray-400: #94a3b8;
+$gray-300: #cbd5f5;
+$gray-50: #f8fafc;
+
+$purple-600: #7c3aed;
+$purple-700: #6d28d9;
+$purple-800: #5b21b6;
+$purple-900: #4c1d95;
+
+$green-500: #22c55e;
+$red-500: #ef4444;
+$yellow-500: #f59e0b;
+
+/* BACKGROUND */
+$bg-primary: $gray-900;
+$bg-secondary: $gray-950;
+$bg-elevated: $gray-800;
+
+/* BRAND */
+$brand-primary: $purple-600;
+$brand-primary-hover: $purple-700;
+$brand-primary-press: $purple-800;
+$brand-primary-disabled: $purple-900;
+
+/* TEXT */
+$text-primary: $gray-50;
+$text-secondary: $gray-300;
+$text-tertiary: $gray-400;
+$text-disabled: $gray-500;
+
+$text-brand: $purple-600;
+$text-brand-active: #a78bfa;
+
+/* BORDERS */
+$border-subtle: $gray-800;
+$border-default: $gray-700;
+$border-strong: $gray-600;
+
+/* INPUT */
+$input-text: $text-primary;
+$input-placeholder: $text-disabled;
+
+$input-bg: $gray-950;
+$input-border: $gray-800;
+$input-border-hover: $gray-700;
+$input-border-focus: $purple-600;
+
+$input-focus-ring: rgba(124, 58, 237, 0.3);
+
+/* BUTTON */
+$button-primary-bg: $brand-primary;
+$button-primary-hover: $brand-primary-hover;
+$button-primary-press: $brand-primary-press;
+$button-primary-disabled: $brand-primary-disabled;
+
+$button-primary-text: $gray-50;
+
+$button-secondary-bg: transparent;
+$button-secondary-hover: $bg-elevated;
+$button-secondary-text: $text-primary;
+$button-secondary-border: $border-default;
+
+/* CARD */
+$card-bg: $bg-elevated;
+$card-border: $border-subtle;
+$card-text: $text-primary;
+$card-text-secondary: $text-tertiary;
+
+/* NAVIGATION */
+$nav-link: $text-primary;
+$nav-link-hover: $text-brand;
+$nav-link-active: $text-brand-active;
+
+/* TYPOGRAPHY */
+$font-primary: "Inter", sans-serif;
+$font-secondary: "Poppins", sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+/* SPACING & RADIUS */
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 16px;
+
+$space-xs: 4px;
+$space-sm: 8px;
+$space-md: 16px;
+$space-lg: 24px;
+$space-xl: 40px;
+$space-2xl: 80px;
+
+/* EFFECTS */
+$shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.1);
+$shadow-medium: 0 15px 40px rgba(0, 0, 0, 0.15);
+
+$glow-brand: rgba(124, 58, 237, 0.4);
+$glow-brand-soft: rgba(124, 58, 237, 0.25);
